@@ -1,0 +1,8 @@
+git_api/*
+!git_api/urls.py
+Pvistas/*
+!Pvistas/templates
+!Pvistas/static
+!Pvistas/views.py
+manage.py
+db.sqlite3

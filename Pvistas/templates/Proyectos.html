@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Proyectos</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="texto-proyecto">
+    <h3>Repositorios de Github actualizados </h3>
+</div>
+
+{% comment %} En cada iteracion del bucle se despliega un div correspondiente a cada repositorio {% endcomment %}
+{% for repo in repos %}
+
+    <a href="{{repo.html_url}}" class="proyecto-url">
+        <div class="proyecto">
+            <h1 class="{{repo.name}}">{{repo.name}}</h1>
+        </div>
+    </a> 
+
+{% endfor %}
+
+{% endblock %}
